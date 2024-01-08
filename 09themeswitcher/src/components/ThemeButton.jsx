@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import useTheme from "../contexts/theme";
 
 function ThemeButton() {
+  //Here we are using useTheme to access the variables and methods we provided in the themcontext
+
   const { themeMode, lightTheme, darkTheme } = useTheme();
 
   const onChangeBtn = (e) => {

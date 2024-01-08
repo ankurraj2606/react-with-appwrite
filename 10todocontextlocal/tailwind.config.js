@@ -4,7 +4,5 @@ export default {
   theme: {
     extend: {},
   },
-  //Here, for using darkMode, we need to write darkMode: "class", some configuration stuff
-  darkMode: "class",
   plugins: [],
 };

@@ -8,6 +8,9 @@ import { ThemeProvider } from "./contexts/theme";
 function App() {
   const [themeMode, setThemeMode] = useState("light");
 
+  //Accessing darkTheme and lightTheme from the ThemeProvider where they are passes as values instead
+  //of passing via the useTheme hook.
+
   const darkTheme = () => {
     setThemeMode("dark");
   };
@@ -22,6 +25,9 @@ function App() {
   }, [themeMode]);
 
   return (
+    //Here we are wrapping App.js with ThemeProvider and passing the values which would be required
+    //with value attribute.
+
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
       <div className="flex flex-wrap min-h-screen items-center">
         <div className="w-full">
